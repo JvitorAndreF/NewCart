@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  font: 16px/1.05 "Montserrat", sans-serif;
+}
+body .container {
+  margin: 0 auto;
+}
+body .container .card,
+body .container .envelope {
+  background: #fff;
+  box-shadow: -1px 8px 3px 0 rgba(0, 0, 0, 0.6);
+  height: 21em;
+  padding: 2em;
+  position: relative;
+  width: 15em;
+}
+body .container .envelope {
+  background: #cb231c;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  margin: -2em -2em;
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+body .container .card h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  width: 90%;
+}
+body .container .card em {
+  color: #cc2119;
+  font-style: normal;
+  cursor: pointer;
+}
+body .container .card .heart {
+  bottom: 4em;
+  position: absolute;
+  right: 4em;
+  cursor: pointer;
+}
+body .container .card .heart img {
+  bottom: -1.2em;
+  position: absolute;
+  right: -1.4em;
+  z-index: 2;
+  cursor: pointer;
+}
+body .container .card .heart::before,
+body .container .card .heart::after {
+  background-color: #cd231b;
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 25px;
+  left: 15px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15px;
+}
+body .container .card .heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+body .container .card .messeger {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 19em;
+  height: 25em;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: rotate(-8deg);
+  transition: all 0.5s ease-in;
+  z-index: -2;
+  overflow: hidden;
+}
+body .container .card .messeger:hover {
+  background-color: #fff;
+  border: 1px solid #cc2119;
+  transform: rotate(0deg);
+  transform: rotateY(180deg);
+  z-index: 2;
+}
+body .container .card .messeger p {
+  transform: rotateY(180deg);
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+body .container .card .messeger h5 {
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.ajuda {
+  position: absolute;
+  bottom: 65px;
+  left: 45%;
+  font-size: 10px;
+  color: #666666;
+}
+
+/*# sourceMappingURL=Style.css.map */
